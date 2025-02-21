@@ -1,35 +1,36 @@
-@media (min-width:768px){
+/* ========== Media Queries ========== */
 
-    
-    #navbar{
+/* للأحجام المتوسطة من 768px وأكبر */
+@media (min-width: 768px) {
+    #navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
     }
-    #navbar ul{
+
+    #navbar ul {
         display: flex;
     }
+
     #header {
-        height: 100vh; 
+        height: 100vh;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-end;
         padding-inline: 50px;
         margin-bottom: 30px;
-        
     }
-    .header-cont{
+
+    .header-cont {
         margin-left: 20px;
         margin-bottom: 20px;
-        
-      }
+    }
+
     #header .header-cont {
         position: relative;
-        top: 0%;
+        top: 0;
         margin: 20px;
-        text-align: left; 
-
+        text-align: left;
     }
 
     #header .header-cont h2 {
@@ -38,79 +39,77 @@
     }
 
     #header .header-cont p {
-        font-size: 18px; 
+        font-size: 18px;
         line-height: 1.8;
         color: #4F4F5A;
     }
-    
+
     #header .header-img img {
-        width: 500px; 
-        margin-left: 0%;
+        width: 500px;
+        margin-left: 0;
     }
+
     .btns {
-        flex-direction: row; 
-        gap: 40px;
-        align-items: center;
-    }
-    .header-content .btns {
-        display: flex;
-        gap: 40px;
-        align-items: center;}
-    .btns{
         display: flex;
         gap: 40px;
         align-items: center;
         justify-content: flex-start;
     }
-    
-    .btns span{
+
+    .btns span {
         position: absolute;
         left: 58%;
         bottom: 30%;
-        } 
+    }
+
     .chefs-card {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
     .chefs-card .card {
-        width: 48%; 
+        width: 48%;
     }
+
     .chefs-card .card svg {
         position: absolute;
-        bottom: 37%; 
+        bottom: 37%;
         right: 0;
-        z-index: 1; 
-        width: 100%; 
+        z-index: 1;
+        width: 100%;
         height: auto;
     }
-    .slider-cont{
-        columns:3 270px ;
-        gap:10px;
-    width: 100%;
+
+    .slider-cont {
+        columns: 3 270px;
+        gap: 10px;
+        width: 100%;
     }
-    .contact-item{
+
+    .contact-item {
         flex-direction: row;
     }
-    .cont-sec{
+
+    .cont-sec {
         display: flex;
         flex-direction: row;
         background-color: #F5F5F5;
         width: 46%;
         margin: 20px;
     }
+
     #footer .container {
         flex-direction: row;
     }
-    
+
     .footer-sec2 input[type="text"] {
-        
-        width:400px;
+        width: 400px;
         height: 40px;
         margin-right: 10px;
-        }
+    }
 
-        .footer-sec2 button {
+    .footer-sec2 button {
         padding: 10px 20px;
         background-color: #CE1212;
         border: none;
@@ -118,46 +117,56 @@
         width: 150px;
         height: 40px;
         font-size: 18px;
-        
-        }
-        .contact-form .subject, textarea {
-            width: 1200px;
-        }
-        .contact-form input {
-            height: 50px;
-            width: 600px;
-            
-            margin-bottom: 10px;
-        }
+    }
+/* 
+
 }
 
-
-
-
+/* للأحجام الكبيرة من 1024px وأكبر */
 @media screen and (min-width: 1024px) {
     .chefs-card .card {
         width: 32%;
     }
+}
+.contact-form .subject,
+.contact-form textarea {
+  width: 1000px;
+}
 
+.contact-form input {
+    height: 50px;
+    width:500px;
+    margin-bottom: 10px;
+} 
+
+/* للأحجام المتوسطة بين 770px و 992px */
+@media (min-width: 770px) and (max-width: 992px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5%;
+        height: 1000px;
+        position: relative;
     }
-    @media (max-width : 992px)and (min-width:770px){
-        #header{
-            display: flex;
-            flex-direction: column;
-            padding-top: 0;
-            height: 1000px;
-            padding-top: 5%;
-            position: relative;
-            
-        }
-        .header-cont{
-            position: relative;
-            right: 10%;
-        }
-        
-        #header .header-img img {
-            width: 500px; 
-            order: 1px;
-            
-        }
+
+    .header-cont {
+        position: relative;
+        right: 10%;
     }
+
+    #header .header-img img {
+        width: 500px;
+        order: 1;
+    }
+    .contact-form .subject,
+.contact-form textarea {
+  width: 100%;
+}
+
+.contact-form input {
+    height: 50px;
+    width:100%;
+    margin-bottom: 10px;
+} 
+}
+}
