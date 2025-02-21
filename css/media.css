@@ -128,7 +128,7 @@
         width: 32%;
     }
 }
-.contact-form .subject,
+/* .contact-form .subject,
 .contact-form textarea {
   width: 1000px;
 }
@@ -137,7 +137,7 @@
     height: 50px;
     width:500px;
     margin-bottom: 10px;
-} 
+}  */
 
 /* للأحجام المتوسطة بين 770px و 992px */
 @media (min-width: 770px) and (max-width: 992px) {
@@ -158,7 +158,7 @@
         width: 500px;
         order: 1;
     }
-    .contact-form .subject,
+    /* .contact-form .subject,
 .contact-form textarea {
   width: 100%;
 }
@@ -167,6 +167,6 @@
     height: 50px;
     width:100%;
     margin-bottom: 10px;
-} 
+}  */
 }
 }
